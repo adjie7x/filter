@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.belajar_filter.BelajarFilterApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.059 sec - in com.belajar_filter.BelajarFilterApplicationTests

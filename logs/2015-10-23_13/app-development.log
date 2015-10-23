@@ -1,0 +1,172 @@
+2015-10-23 13:41:40 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015-10-23 13:41:40 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@52525845, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3b94d659, org.springframework.test.context.support.DirtiesContextTestExecutionListener@24b1d79b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68ceda24, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@281e3708]
+2015-10-23 13:41:42 - Starting BelajarFilterApplicationTests on ASUS-PC with PID 1432 (D:\02_DEVELOPMENT\02_WORKSPACE\DMSM\belajar_filter\target\test-classes started by ASUS in D:\02_DEVELOPMENT\02_WORKSPACE\DMSM\belajar_filter)
+2015-10-23 13:41:42 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@478190fc: startup date [Fri Oct 23 13:41:42 ICT 2015]; root of context hierarchy
+2015-10-23 13:41:45 - Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-10-23 13:41:47 - HV000001: Hibernate Validator 5.1.3.Final
+2015-10-23 13:41:48 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d795c0f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:41:48 - Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:41:48 - Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:41:48 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:41:51 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-10-23 13:41:51 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-10-23 13:41:52 - HHH000412: Hibernate Core {4.3.11.Final}
+2015-10-23 13:41:52 - HHH000206: hibernate.properties not found
+2015-10-23 13:41:52 - HHH000021: Bytecode provider name : javassist
+2015-10-23 13:41:53 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-10-23 13:41:54 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2015-10-23 13:41:54 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-10-23 13:41:54 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-23 13:41:59 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@478190fc: startup date [Fri Oct 23 13:41:42 ICT 2015]; root of context hierarchy
+2015-10-23 13:41:59 - Mapped "{[/admin/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.AdminController.says(java.lang.String)
+2015-10-23 13:41:59 - Mapped "{[/hallo/logout/success],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.HalloController.successLogOut()
+2015-10-23 13:41:59 - Mapped "{[/hallo/says],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.HalloController.sayHallo(java.lang.String)
+2015-10-23 13:41:59 - Mapped "{[/operator/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.OperatorController.says(java.lang.String)
+2015-10-23 13:41:59 - Mapped "{[/user/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.UserController.says(java.lang.String)
+2015-10-23 13:41:59 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-10-23 13:41:59 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-10-23 13:41:59 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:41:59 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:42:00 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:42:00 - Started BelajarFilterApplicationTests in 19.609 seconds (JVM running for 22.82)
+2015-10-23 13:42:16 - Starting BelajarFilterApplication on ASUS-PC with PID 1484 (D:\02_DEVELOPMENT\02_WORKSPACE\DMSM\belajar_filter\target\classes started by ASUS in D:\02_DEVELOPMENT\02_WORKSPACE\DMSM\belajar_filter)
+2015-10-23 13:42:16 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35387c8f: startup date [Fri Oct 23 13:42:16 ICT 2015]; root of context hierarchy
+2015-10-23 13:42:19 - Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-10-23 13:42:20 - HV000001: Hibernate Validator 5.1.3.Final
+2015-10-23 13:42:21 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$153b27a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:42:21 - Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:42:21 - Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:42:21 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:42:23 - Tomcat initialized with port(s): 8083 (http)
+2015-10-23 13:42:23 - Starting service Tomcat
+2015-10-23 13:42:23 - Starting Servlet Engine: Apache Tomcat/8.0.26
+2015-10-23 13:42:24 - Initializing Spring embedded WebApplicationContext
+2015-10-23 13:42:24 - Root WebApplicationContext: initialization completed in 7338 ms
+2015-10-23 13:42:26 - Mapping servlet: 'dispatcherServlet' to [/]
+2015-10-23 13:42:26 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-10-23 13:42:26 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-10-23 13:42:28 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-10-23 13:42:28 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-10-23 13:42:29 - HHH000412: Hibernate Core {4.3.11.Final}
+2015-10-23 13:42:29 - HHH000206: hibernate.properties not found
+2015-10-23 13:42:29 - HHH000021: Bytecode provider name : javassist
+2015-10-23 13:42:29 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-10-23 13:42:30 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2015-10-23 13:42:30 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-10-23 13:42:30 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-23 13:42:32 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35387c8f: startup date [Fri Oct 23 13:42:16 ICT 2015]; root of context hierarchy
+2015-10-23 13:42:32 - Mapped "{[/admin/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.AdminController.says(java.lang.String)
+2015-10-23 13:42:32 - Mapped "{[/hallo/says],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.HalloController.sayHallo(java.lang.String)
+2015-10-23 13:42:32 - Mapped "{[/hallo/logout/success],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.HalloController.successLogOut()
+2015-10-23 13:42:32 - Mapped "{[/operator/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.OperatorController.says(java.lang.String)
+2015-10-23 13:42:32 - Mapped "{[/user/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.UserController.says(java.lang.String)
+2015-10-23 13:42:32 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-10-23 13:42:32 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-10-23 13:42:32 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:42:32 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:42:32 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:42:33 - Registering beans for JMX exposure on startup
+2015-10-23 13:42:33 - Initializing ProtocolHandler ["http-nio-8083"]
+2015-10-23 13:42:33 - Starting ProtocolHandler ["http-nio-8083"]
+2015-10-23 13:42:33 - Using a shared selector for servlet write/read
+2015-10-23 13:42:33 - Tomcat started on port(s): 8083 (http)
+2015-10-23 13:42:33 - Started BelajarFilterApplication in 18.043 seconds (JVM running for 77.695)
+2015-10-23 13:44:48 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-10-23 13:44:48 - FrameworkServlet 'dispatcherServlet': initialization started
+2015-10-23 13:44:48 - FrameworkServlet 'dispatcherServlet': initialization completed in 66 ms
+2015-10-23 13:45:08 - info name : aji
+2015-10-23 13:45:30 - info name : aji
+2015-10-23 13:45:32 - info name : aji
+2015-10-23 13:46:54 - info name : aji
+2015-10-23 13:46:57 - info name : aji
+2015-10-23 13:47:00 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35387c8f: startup date [Fri Oct 23 13:42:16 ICT 2015]; root of context hierarchy
+2015-10-23 13:47:00 - Unregistering JMX-exposed beans on shutdown
+2015-10-23 13:47:00 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2015-10-23 13:47:25 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015-10-23 13:47:26 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@52525845, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3b94d659, org.springframework.test.context.support.DirtiesContextTestExecutionListener@24b1d79b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@68ceda24, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@281e3708]
+2015-10-23 13:47:27 - Starting BelajarFilterApplicationTests on ASUS-PC with PID 3144 (D:\02_DEVELOPMENT\02_WORKSPACE\DMSM\belajar_filter\target\test-classes started by ASUS in D:\02_DEVELOPMENT\02_WORKSPACE\DMSM\belajar_filter)
+2015-10-23 13:47:27 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@478190fc: startup date [Fri Oct 23 13:47:27 ICT 2015]; root of context hierarchy
+2015-10-23 13:47:30 - Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-10-23 13:47:32 - HV000001: Hibernate Validator 5.1.3.Final
+2015-10-23 13:47:32 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d795c0f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:47:33 - Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:47:33 - Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:47:33 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:47:35 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-10-23 13:47:35 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-10-23 13:47:36 - HHH000412: Hibernate Core {4.3.11.Final}
+2015-10-23 13:47:36 - HHH000206: hibernate.properties not found
+2015-10-23 13:47:36 - HHH000021: Bytecode provider name : javassist
+2015-10-23 13:47:37 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-10-23 13:47:38 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2015-10-23 13:47:38 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-10-23 13:47:38 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-23 13:47:42 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@478190fc: startup date [Fri Oct 23 13:47:27 ICT 2015]; root of context hierarchy
+2015-10-23 13:47:42 - Mapped "{[/admin/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.AdminController.says(java.lang.String)
+2015-10-23 13:47:42 - Mapped "{[/hallo/logout/success],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.HalloController.successLogOut()
+2015-10-23 13:47:42 - Mapped "{[/hallo/says],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.HalloController.sayHallo(java.lang.String)
+2015-10-23 13:47:42 - Mapped "{[/operator/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.OperatorController.says(java.lang.String)
+2015-10-23 13:47:42 - Mapped "{[/user/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.UserController.says(java.lang.String)
+2015-10-23 13:47:42 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-10-23 13:47:42 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-10-23 13:47:42 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:47:42 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:47:42 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:47:43 - Started BelajarFilterApplicationTests in 17.01 seconds (JVM running for 20.465)
+2015-10-23 13:47:55 - Starting BelajarFilterApplication on ASUS-PC with PID 6776 (D:\02_DEVELOPMENT\02_WORKSPACE\DMSM\belajar_filter\target\classes started by ASUS in D:\02_DEVELOPMENT\02_WORKSPACE\DMSM\belajar_filter)
+2015-10-23 13:47:56 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57c8cf1d: startup date [Fri Oct 23 13:47:55 ICT 2015]; root of context hierarchy
+2015-10-23 13:47:58 - Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-10-23 13:47:59 - HV000001: Hibernate Validator 5.1.3.Final
+2015-10-23 13:48:00 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e4327f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:48:00 - Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:48:00 - Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:48:00 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-10-23 13:48:02 - Tomcat initialized with port(s): 8083 (http)
+2015-10-23 13:48:03 - Starting service Tomcat
+2015-10-23 13:48:03 - Starting Servlet Engine: Apache Tomcat/8.0.26
+2015-10-23 13:48:04 - Initializing Spring embedded WebApplicationContext
+2015-10-23 13:48:04 - Root WebApplicationContext: initialization completed in 8218 ms
+2015-10-23 13:48:06 - Mapping servlet: 'dispatcherServlet' to [/]
+2015-10-23 13:48:07 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-10-23 13:48:07 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-10-23 13:48:09 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2015-10-23 13:48:09 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2015-10-23 13:48:09 - HHH000412: Hibernate Core {4.3.11.Final}
+2015-10-23 13:48:09 - HHH000206: hibernate.properties not found
+2015-10-23 13:48:09 - HHH000021: Bytecode provider name : javassist
+2015-10-23 13:48:10 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-10-23 13:48:10 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2015-10-23 13:48:10 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2015-10-23 13:48:11 - HHH000397: Using ASTQueryTranslatorFactory
+2015-10-23 13:48:12 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57c8cf1d: startup date [Fri Oct 23 13:47:55 ICT 2015]; root of context hierarchy
+2015-10-23 13:48:13 - Mapped "{[/admin/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.AdminController.says(java.lang.String)
+2015-10-23 13:48:13 - Mapped "{[/hallo/logout/success],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.HalloController.successLogOut()
+2015-10-23 13:48:13 - Mapped "{[/hallo/says],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.HalloController.sayHallo(java.lang.String)
+2015-10-23 13:48:13 - Mapped "{[/operator/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.OperatorController.says(java.lang.String)
+2015-10-23 13:48:13 - Mapped "{[/user/says/{name}],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.belajar_filter.controller.UserController.says(java.lang.String)
+2015-10-23 13:48:13 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-10-23 13:48:13 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-10-23 13:48:13 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:48:13 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:48:13 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-23 13:48:14 - Registering beans for JMX exposure on startup
+2015-10-23 13:48:14 - Initializing ProtocolHandler ["http-nio-8083"]
+2015-10-23 13:48:14 - Starting ProtocolHandler ["http-nio-8083"]
+2015-10-23 13:48:14 - Using a shared selector for servlet write/read
+2015-10-23 13:48:14 - Tomcat started on port(s): 8083 (http)
+2015-10-23 13:48:14 - Started BelajarFilterApplication in 19.412 seconds (JVM running for 69.178)
+2015-10-23 13:48:38 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-10-23 13:48:38 - FrameworkServlet 'dispatcherServlet': initialization started
+2015-10-23 13:48:38 - FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2015-10-23 13:48:38 - info name : aji
+2015-10-23 13:48:47 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@57c8cf1d: startup date [Fri Oct 23 13:47:55 ICT 2015]; root of context hierarchy
+2015-10-23 13:48:47 - Unregistering JMX-exposed beans on shutdown
+2015-10-23 13:48:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
